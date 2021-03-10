@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: calibri;
+}
+
+.content {
+    margin: 8px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+}
+
+.header a {
+    padding-right: 1rem;
+    color: gray;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: white;
+}

@@ -1,0 +1,11 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Homepage{% endblock %}
+{% block content %}
+    <h1>Flask Website!</h1>
+    <p>A template for all of your Flask Applications.</p>
+    <div id="flaskMsg">
+        <p>Flask Says:</p>
+    </div>
+    <button onClick="SetFlask(document.getElementById('flaskMsg'), '/api/hello')">Get Flask 😁</button>
+{% endblock %}
