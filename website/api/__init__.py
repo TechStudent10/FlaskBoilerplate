@@ -33,5 +33,5 @@ def login():
         session['username'] = username
         return redirect(url_for('frontend.myUser'))
     
-    flash("User not found", category="error")
+    flash("User not found", category="danger")
     return redirect(url_for('frontend.login'))
