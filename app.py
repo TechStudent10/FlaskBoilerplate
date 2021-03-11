@@ -1,10 +1,7 @@
-from flask import Flask
 from config import *
-from website import api, frontend
+from website import create_app
 
-app = Flask(__name__, static_folder=None)
-app.register_blueprint(api, url_prefix="/api")
-app.register_blueprint(frontend)
+app = create_app()
 
 if __name__ == "__main__":
     app.run(debug=DEBUG, host=HOST, port=PORT)
